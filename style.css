@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-family: "Epilogue", sans-serif;
+}
+
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+}
+nav h1 {
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 1.1rem;
+    color:hsl(0, 0%, 41%) ;
+    margin-left: 60px;
+}
+.loginBtn{
+    border: none;
+    background-color: white;
+    color:hsl(0, 0%, 41%) ;
+    font-size: 1.02rem;
+    position: absolute;
+    right: 13%
+}
+.registerBtn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color:hsl(0, 0%, 41%) ;
+    position: absolute;
+    right: 4%;
+}
+.menuBtn{
+    margin-right: 3%;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+}
+nav button , nav ul:hover{
+    cursor: pointer;
+}
+nav ul,.loginBtn,.registerBtn{
+    display: none;
+}
+
+
+.mobileImg{
+    width: 100%;
+    height: 330px;
+}
+.desktopImg{
+    display: none;
+}
+
+.textArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.textArea h1{
+    font-size: 2.4rem;
+    padding: 25px 10px 8px 10px;
+}
+.textArea p{
+    font-size: 18px;
+    color: hsl(0, 0%, 41%);
+    margin: 0px auto;
+    padding: 10px 50px 20px 50px;
+    text-align: center;
+}
+.learnBtn{
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.learnBtn:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+.sgvContain{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 20px 0px;
+}
+.sgvContain img{
+    height: 25px;
+    width: 80px;
+}
+
+@media(min-width:700px){
+    .loginBtn,.registerBtn{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+    }
+    .menuBtn{
+        display: none;
+    }
+    .mobileImg{
+        display: none;
+    }
+    .desktopImg{
+        display: block;
+        width: 550px;
+        margin: 20px 0;
+        height: 74vh;
+        flex-shrink: 1;
+    }
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+        height:88vh;
+        margin: 0 120px;
+    }
+    .textArea{
+        position: relative;
+    }
+    .textArea h1{
+        font-size: 4.6rem;
+        margin: 15% 30% 0 0;
+        font-weight: 700;
+        padding: 0;
+        width: 70%;
+
+    }
+    .textArea p{       
+        text-align: start;
+        padding: 0;
+        width: 54%;
+        position: absolute;
+        left: 0;
+        top: 45%;
+    }
+    .learnBtn{
+        position: absolute;
+        left: 0;
+        top: 60%;
+    }
+    .sgvContain{
+        display: flex;
+        justify-content: space-between;
+        width: 67%;
+        position: absolute;
+        left: 0;
+        top: 75%;
+    }
+}
